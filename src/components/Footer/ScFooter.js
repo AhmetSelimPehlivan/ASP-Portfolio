@@ -1,5 +1,6 @@
 import Styled from "styled-components";
 const ScFooter = Styled.div`
+width: 80%;
 .footer {
     padding: 24px 0 24px 250px; }
     .footer [class*="container-"] {

@@ -9,17 +9,17 @@ function Footer() {
         <Container fluid>
           <Nav>
             <NavItem>
-              <NavLink href="https://play.google.com/store/apps/details?id=com.HyperactiveGames.GoalKeeper&pli=1">
-              EtuMates
+              <NavLink href="https://www.instagram.com/aspehli1/">
+              Aspehli1
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://play.google.com/store/apps/details?id=com.HyperactiveGames.GoalKeeper&pli=1">
+              <NavLink href="">
                 About Us
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://play.google.com/store/apps/details?id=com.HyperactiveGames.GoalKeeper&pli=1">
+              <NavLink href="">
                 Blog
               </NavLink>
             </NavItem>
@@ -27,10 +27,10 @@ function Footer() {
           <div className="copyright">
             © {new Date().getFullYear()} made with{" "}
             <a
-              href="https://play.google.com/store/apps/details?id=com.HyperactiveGames.GoalKeeper&pli=1"
+              href="https://www.linkedin.com/in/ahmet-selim-pehlivan-ba147916a/"
               target="_blank"
             >
-              EtuMates
+              ASP
             </a>
           </div>
         </Container>

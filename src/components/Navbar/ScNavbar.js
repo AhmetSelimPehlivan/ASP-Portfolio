@@ -1,31 +1,55 @@
 import Styled from "styled-components";
 const ScNavbar = Styled.div`
-    width: 100%;
-    height: 60px;
-    border-style: solid;
-    border-color: #121212;
+    height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    border-style: solid;
+    border-color: #121212;
+
     .SocialMedia, .Works{
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 5px 0px;
+      padding: 10px 0px;
 
       img{
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
       }
     }
-    ul{
+    .SocialMedia{
         display: flex;
         img{
             margin-left: 20px;
             font-size: 15px;
             cursor: pointer;
         }
+        .Gmail{
+          color: white;
+          font-size: 15px;
+          text-decoration: blink;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img{
+            padding-right: 5px;
+          }
+        }
+    }
+    .Works{
+      a{
+        color: white;
+        font-size: 15px;
+        padding: 10px;
+        text-decoration: blink;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      img{
+        padding-right: 5px;
+      }
     }
 `;
 export default ScNavbar;

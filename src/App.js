@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import React, { Suspense } from 'react';
+import './App.css';
 
 const WelcomePage = React.lazy(() => import('./pages/welcome'));
 function App() {

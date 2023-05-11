@@ -1,9 +1,7 @@
 import Styled from "styled-components";
 const ScWelcome = Styled.div`
-    background-color: #121212;
-    color: #FFFFFF;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 60px;
     .main{
         width: 100%;
         display: flex;
@@ -13,23 +11,34 @@ const ScWelcome = Styled.div`
             width: 100%;
             height: 80%;
         }
-        .me{
+        header, section{
             width: 80%;
             padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            .myImage{
-                width: 320px;
-            }
+
         }
-        section{
-            width: 80%;
-            padding: 20px;    
+        section{ 
             display: flex;
             text-align: center;
             flex-direction: column;
             align-items: center;
+        }
+        .me{
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+            .introduction{
+                text-align: center;
+                width: 75%;
+                padding: 80px;
+            }
+            .myImage{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{width: 480px;}
+            }
         }
         .interest{
             .example-appear {

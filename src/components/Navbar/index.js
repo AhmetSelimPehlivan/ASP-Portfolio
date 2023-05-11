@@ -1,35 +1,39 @@
-import {useNavigate, useLocation } from 'react-router-dom';
-import React from 'react';
-import AspIcon from '../../assets/img/asp.png';
-import WorkIcon from '../../assets/img/work.png';
-import ResumeIcon from '../../assets/img/resume.png';
-import LinkedinIcon from '../../assets/img/linkedin.png';
-import GmailIcon from '../../assets/img/gmail.png';
-import GithubIcon from '../../assets/img/github.png';
-import MediumIcon from '../../assets/img/medium.png';
+import React, { useState } from 'react';
+import { ThemeContext, themes } from '../../context/ThemeContext';
+import MediumIcon from '../../assets/img/medium.svg';
+import WorkIcon from '../../assets/img/work.svg';
+import ResumeIcon from '../../assets/img/resume.svg';
+import LinkedinIcon from '../../assets/img/linkedin.svg';
+import GmailIcon from '../../assets/img/email.svg';
+import GithubIcon from '../../assets/img/github.svg';
+import ToggleDark from '../../components/ToggleDark';
 import ScNavbar from './ScNavbar';
 
 const Navbar = () => {
-    const navigation = useNavigate();
-    const location = useLocation();
-    const userName = sessionStorage.getItem("user_name")
-
+    const [darkMode, setDarkMode] = useState(true);
     return (
         <ScNavbar>
-            <div className='SocialMedia'>            
-                <img alt='ASP' src={AspIcon}/>
-                <ul>
-                    <a href="https://github.com/AhmetSelimPehlivan"><img alt="Github" src={GithubIcon}/></a>
-                    <a href="https://www.linkedin.com/in/ahmet-selim-pehlivan-ba147916a/"><img alt="Linkedin" src={LinkedinIcon}/></a>
-                    <a href="ahmetselimpehlivan@gmail.com"><img alt="Gmail" src={GmailIcon}/></a>
-                </ul>
+            <div className='SocialMedia'>
+                <a href="https://github.com/AhmetSelimPehlivan"><img alt="Github" src={GithubIcon}/></a>
+                <a href="https://www.linkedin.com/in/ahmet-selim-pehlivan-ba147916a/"><img alt="Linkedin" src={LinkedinIcon}/></a>
+                <a href="/Medium"><img alt="Medium" src={MediumIcon}/></a>
+                <a href="ahmetselimpehlivan@gmail.com" className='Gmail'><img alt="Gmail" src={GmailIcon}/><p>ahmetselimpehlivan@gmail.com</p></a>
+            </div>
+            <div className='DarkMode'>
+                <ThemeContext.Consumer>
+                    {({ changeTheme }) => (
+                    <ToggleDark
+                        toggleDark={() => {
+                        setDarkMode(!darkMode);
+                        changeTheme(darkMode ? themes.light : themes.dark);
+                        }}
+                    />
+                    )}
+                </ThemeContext.Consumer>
             </div>
             <div className='Works'>
-                <ul>
-                    <a href="/Works"><img alt="Works" src={WorkIcon}/></a>
-                    <a href="/Resume"><img alt="Resume" src={ResumeIcon}/></a>
-                    <a href="/Medium"><img alt="Medium" src={MediumIcon}/></a>
-                </ul>
+                <a href="/Works"><img alt="Works" src={WorkIcon}/>Work</a>
+                <a href="/Resume"><img alt="Resume" src={ResumeIcon}/>Resume</a>
             </div>
         </ScNavbar>
     );
