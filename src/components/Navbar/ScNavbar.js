@@ -6,7 +6,7 @@ const ScNavbar = Styled.div`
     border-style: solid;
     border-color: #121212;
 
-    .SocialMedia, .Works{
+    .Mail, .Works{
       width: 100%;
       display: flex;
       align-items: center;
@@ -18,7 +18,7 @@ const ScNavbar = Styled.div`
         height: 40px;
       }
     }
-    .SocialMedia{
+    .Mail{
         display: flex;
         img{
             margin-left: 20px;

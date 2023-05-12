@@ -28,6 +28,13 @@ const ScWelcome = Styled.div`
                 text-align: center;
                 width: 75%;
                 padding: 80px;
+
+                .socialMedia{
+                    padding: 50px;
+                    a{
+                        padding: 7px;
+                    }
+                }
             }
             .myImage{
                 display: flex;
@@ -35,28 +42,6 @@ const ScWelcome = Styled.div`
                 justify-content: center;
                 img{width: 480px;}
             }
-        }
-        .interest{
-            .example-appear {
-                opacity: 0.01;
-            }
-            .example-appear.example-appear-active {
-                opacity: 1;
-                transition: opacity .5s ease-in;
-            }
-            clip-path: polygon(0 15vh,100% 0,100% 100%,0 100%);
-        }
-        .work{
-            h1{
-                font-size: 40px;
-            }
-            .workbox-container{
-                display: flex;
-                flex-wrap: wrap;
-                text-align: center;
-            }
-        }
-        .resume{
         }
     }
 `
