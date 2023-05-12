@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar';
 import WorkBox from '../../components/WorkBox';
 import Footer from '../../components/Footer/Footer';
 import { CSSTransition } from 'react-transition-group';
+import { NativeApps, WebApps, Games } from '../../constants/works';
 
 const welcome = () => {
     return (
@@ -25,8 +26,9 @@ const welcome = () => {
             <section className='work'>
               <h1>My Works</h1>
               <div className='workbox-container'>
-                <WorkBox/>
-                <WorkBox/>
+                {
+                  WebApps.map((item) => <WorkBox title={item.name} paragraph={item.techUsed} link={item.link} img={item.imgUrl}/>)
+                }
               </div>
             </section>
             <section className='interest'>

@@ -39,10 +39,8 @@ const ScNavbar = Styled.div`
     }
     .Works{
       a{
-        color: white;
         font-size: 15px;
         padding: 10px;
-        text-decoration: blink;
         display: flex;
         align-items: center;
         justify-content: center;

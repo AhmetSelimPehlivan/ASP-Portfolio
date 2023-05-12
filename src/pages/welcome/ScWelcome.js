@@ -7,10 +7,6 @@ const ScWelcome = Styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        div{
-            width: 100%;
-            height: 80%;
-        }
         header, section{
             width: 80%;
             padding: 20px;
@@ -48,10 +44,15 @@ const ScWelcome = Styled.div`
                 opacity: 1;
                 transition: opacity .5s ease-in;
             }
+            clip-path: polygon(0 15vh,100% 0,100% 100%,0 100%);
         }
         .work{
+            h1{
+                font-size: 40px;
+            }
             .workbox-container{
                 display: flex;
+                flex-wrap: wrap;
                 text-align: center;
             }
         }
