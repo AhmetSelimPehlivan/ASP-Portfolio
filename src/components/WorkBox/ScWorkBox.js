@@ -1,6 +1,7 @@
 import Styled from "styled-components";
 const ScWorkBox = Styled.div`
 width: 50%;
+display: inline-block;
 .workbox{
     position: relative;
     border-radius: 0.5rem;
@@ -14,6 +15,7 @@ width: 50%;
         background-color: #1e1e2fb3;
         border-bottom-left-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
+        transition: background-color 1s ease;
 
     }
     img{
@@ -22,5 +24,14 @@ width: 50%;
         border-radius: 0.5rem;
     }
 }
+
+@keyframes moveAcross {
+    0% {
+      left: -300px;
+    }
+    100% {
+      left: 110%;
+    }
+  }
 `
 export default ScWorkBox;

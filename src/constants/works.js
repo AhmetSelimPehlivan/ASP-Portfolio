@@ -52,18 +52,22 @@ export const WebApps = [
 export const NativeApps = [
   {
     name: 'YKS\'Ye Koç',
+    imgUrl:
+    'https://res.cloudinary.com/dwa1jtluu/image/upload/v1673204918/kenjimmy.me/veet-shot_lerl5h.jpg',
     //bgImage: require('~/assets/images/My-works/ipa-mastery.jpg'),
     link:
       'https://play.google.com/store/apps/details?id=com.ykskoc',
-    techUsed: 'Android Studio'
+    techUsed: 'Android Studio, Java, MySql'
   },
 ];
 // AR/VR Games
 export const Games = [
   {
     name: 'AR Goalkeeper',
+    imgUrl:
+    'https://res.cloudinary.com/dwa1jtluu/image/upload/v1673204918/kenjimmy.me/veet-shot_lerl5h.jpg',
     //bgImage: require('~/assets/images/My-works/ipa-mastery.jpg'),
     link:'https://play.google.com/store/apps/details?id=com.HyperactiveGames.GoalKeeper&pli=1',
-    techUsed: 'Unity'
+    techUsed: 'Unity, C#, Mediapipe, Firebase'
   },
 ];
