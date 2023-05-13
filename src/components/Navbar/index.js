@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ThemeContext, themes } from '../../context/ThemeContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLaptopCode, faUniversity } from '@fortawesome/free-solid-svg-icons';
@@ -10,7 +11,6 @@ const Navbar = () => {
     return (
         <ScNavbar>
             <div className='Mail'>
-
                 <a href="ahmetselimpehlivan@gmail.com" className='Gmail'><FontAwesomeIcon icon={faEnvelope}/><p>ahmetselimpehlivan@gmail.com</p></a>
             </div>
             <div className='DarkMode'>
@@ -26,8 +26,8 @@ const Navbar = () => {
                 </ThemeContext.Consumer>
             </div>
             <div className='Works'>
-                <a href="/Work"><FontAwesomeIcon icon={faLaptopCode} />Work</a>
-                <a href="/Resume"><FontAwesomeIcon icon={faUniversity} />Resume</a>
+                <Link to="/works"><FontAwesomeIcon icon={faLaptopCode} />Work</Link>
+                <Link to="/resume"><FontAwesomeIcon icon={faUniversity} />Resume</Link>
             </div>
         </ScNavbar>
     );

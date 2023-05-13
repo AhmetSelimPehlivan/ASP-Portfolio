@@ -29,6 +29,22 @@
 .App-link {
   color: #61dafb;
 }
+.main-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container header, section{
+    width: 80%;
+    padding: 20px;
+}
+.main-container section{ 
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+}
 
 .interaction-button img:hover {
   background: #525f7f;

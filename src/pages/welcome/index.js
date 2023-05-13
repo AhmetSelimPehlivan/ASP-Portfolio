@@ -2,14 +2,11 @@ import ScWelcome from './ScWelcome';
 import ASP from '../../assets/img/asp_img.png';
 import Works from '../works';
 import Interest from '../Interest';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer/Footer';
 import { SocialMedia } from '../../constants/socialmedia';
 
 const welcome = () => {
     return (
         <ScWelcome>
-          <Navbar/>
           <div className='main'>
             <header className='me'>
               <div className='introduction'>
@@ -26,10 +23,11 @@ const welcome = () => {
                 <img alt='MyImage' src={ASP}/>
               </div>
             </header>
+            <h1>Works</h1>
             <Works/>
+            <h1>Interest</h1>
             <Interest/>
           </div>
-          <Footer/>
         </ScWelcome>
     );
 }

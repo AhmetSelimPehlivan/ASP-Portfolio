@@ -13,7 +13,6 @@ const Works = () => {
     });
     return (
         <ScWorks>
-            <h1>Works</h1>
             <div className='workbox-container'>
                 <h2>Web Apps</h2>
                 <div className='webApps'>

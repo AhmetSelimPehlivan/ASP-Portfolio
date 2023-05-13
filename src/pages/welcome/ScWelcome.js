@@ -1,23 +1,11 @@
 import Styled from "styled-components";
 const ScWelcome = Styled.div`
-    width: 100%;
-    padding-top: 60px;
     .main{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        header, section{
-            width: 80%;
-            padding: 20px;
-
-        }
-        section{ 
-            display: flex;
-            text-align: center;
-            flex-direction: column;
-            align-items: center;
-        }
+        
         .me{
             padding: 20px;
             display: flex;

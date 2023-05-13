@@ -1,5 +1,7 @@
 import Styled from "styled-components";
 const ScNavbar = Styled.div`
+    width: 100%;
+    padding-top: 50px;
     height: 100px;
     display: flex;
     align-items: center;

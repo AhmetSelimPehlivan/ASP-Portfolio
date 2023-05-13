@@ -16,7 +16,6 @@ const Interest = () => {
     });
     return (
         <ScInterest>
-          <h1>Interest</h1>
           <div className='interest-box' >
               <div className='interest-paragraphs'>
                   {
