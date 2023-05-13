@@ -1,10 +1,9 @@
 import React from 'react';
-import ScWorks from './ScWorks';
+import ScResume from './ScResume';
 import WorkBox from '../../components/WorkBox';
-import { NativeApps, WebApps, Games } from '../../constants/works';
 import { gsap } from "gsap"
 
-const Works = () => {
+const Resume = () => {
     gsap.to('.nativeApp', {
       left: "-200%",
       ease: "Strong.easeInOut",
@@ -12,8 +11,8 @@ const Works = () => {
       progress: 0.5
     });
     return (
-        <ScWorks>
-            <h1>Works</h1>
+        <ScResume>
+            <h1>Resume</h1>
             <div className='workbox-container'>
                 <h2>Web Apps</h2>
                 <div className='webApps'>
@@ -34,7 +33,7 @@ const Works = () => {
                     )}
                 </div>
             </div>
-        </ScWorks>
+        </ScResume>
     );
 }
-export default Works;
+export default Resume;

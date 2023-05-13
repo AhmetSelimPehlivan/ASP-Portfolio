@@ -17,6 +17,56 @@ const ScNavbar = Styled.div`
         width: 40px;
         height: 40px;
       }
+
+      a{
+        color: #FFF;
+        transition: all 0.3s;
+        position: relative;
+        transition: all 0.3s;
+        svg{
+          font-size: 25px;
+          margin: 10px;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          opacity: 0;
+          transition: all 0.3s;
+          border-top-width: 1px;
+          border-bottom-width: 1px;
+          border-top-style: solid;
+          border-bottom-style: solid;
+          border-top-color: rgba(255,255,255,0.5);
+          border-bottom-color: rgba(255,255,255,0.5);
+          transform: scale(0.1, 1);
+        }
+        &:hover {
+          letter-spacing: 1.5px;
+        }
+        &:hover::before {
+          opacity: 1;	
+          transform: scale(1, 1);	
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          transition: all 0.3s;
+        }
+        &:hover::after {
+          opacity: 0;	
+          transform: scale(0.1, 1);
+        }
+      }
     }
     .Mail{
         display: flex;
@@ -40,7 +90,7 @@ const ScNavbar = Styled.div`
     .Works{
       a{
         font-size: 15px;
-        padding: 10px;
+        margin: 10px 25px;
         display: flex;
         align-items: center;
         justify-content: center;

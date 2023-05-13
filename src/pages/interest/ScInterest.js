@@ -8,15 +8,36 @@ const ScInterest = Styled.section`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .example-appear {
-            opacity: 0.01;
-        }
-        .example-appear.example-appear-active {
+        .interest-transition-enter {
+            opacity: 0;
+          }
+          .interest-transition-enter-active {
             opacity: 1;
-            transition: opacity .5s ease-in;
-        }
+            transition: opacity 200ms;
+          }
+          .interest-transition-exit {
+            opacity: 1;
+          }
+          .interest-transition-exit-active {
+            opacity: 0;
+            transition: opacity 200ms;
+          }
     }
     .interest-illusturation{
+        .my-node-enter {
+            opacity: 0;
+          }
+          .my-node-enter-active {
+            opacity: 1;
+            transition: opacity 200ms;
+          }
+          .my-node-exit {
+            opacity: 1;
+          }
+          .my-node-exit-active {
+            opacity: 0;
+            transition: opacity 200ms;
+          }
         img{width: 100%;}
     }
 }

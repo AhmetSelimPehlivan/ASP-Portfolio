@@ -1,7 +1,7 @@
 import ScWelcome from './ScWelcome';
 import ASP from '../../assets/img/asp_img.png';
 import Works from '../works';
-import Interest from '../interest';
+import Interest from '../Interest';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer/Footer';
 import { SocialMedia } from '../../constants/socialmedia';
@@ -19,7 +19,7 @@ const welcome = () => {
                   Expert in artificial intelligence, image processing, and web applications, always looking for creative solutions for end-users.
                   Please feel free to contact me if you have anything to convey!</p>
                 <div className='socialMedia'>
-                  {SocialMedia.map((item) => <a href={item.link}>{item.imgUrl}</a>)}
+                  {SocialMedia.map((item) => <><a href={item.link} className='interaction-button social'>{item.imgUrl}</a></>)}
                 </div>
               </div>
               <div className='myImage'>

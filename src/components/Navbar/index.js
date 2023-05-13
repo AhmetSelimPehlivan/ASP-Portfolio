@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { ThemeContext, themes } from '../../context/ThemeContext';
-import WorkIcon from '../../assets/img/work.svg';
-import ResumeIcon from '../../assets/img/resume.svg';
-import GmailIcon from '../../assets/img/email.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faLaptopCode, faUniversity } from '@fortawesome/free-solid-svg-icons';
 import ToggleDark from '../../components/ToggleDark';
 import ScNavbar from './ScNavbar';
 
@@ -11,7 +10,8 @@ const Navbar = () => {
     return (
         <ScNavbar>
             <div className='Mail'>
-                <a href="ahmetselimpehlivan@gmail.com" className='Gmail'><img alt="Gmail" src={GmailIcon}/><p>ahmetselimpehlivan@gmail.com</p></a>
+
+                <a href="ahmetselimpehlivan@gmail.com" className='Gmail'><FontAwesomeIcon icon={faEnvelope}/><p>ahmetselimpehlivan@gmail.com</p></a>
             </div>
             <div className='DarkMode'>
                 <ThemeContext.Consumer>
@@ -26,8 +26,8 @@ const Navbar = () => {
                 </ThemeContext.Consumer>
             </div>
             <div className='Works'>
-                <a href="/Works"><img alt="Works" src={WorkIcon}/>Work</a>
-                <a href="/Resume"><img alt="Resume" src={ResumeIcon}/>Resume</a>
+                <a href="/Work"><FontAwesomeIcon icon={faLaptopCode} />Work</a>
+                <a href="/Resume"><FontAwesomeIcon icon={faUniversity} />Resume</a>
             </div>
         </ScNavbar>
     );

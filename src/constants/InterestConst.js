@@ -1,4 +1,4 @@
-export const Interest = [{
+export const InterestConst = [{
     title: 'Machine Learning',
     paragraph: 'Machine learning is a type of AI that teaches computer systems how to learn and improve from experience, without being directly programmed. It trains them to recognize patterns, and make predictions based on data. I am interested in using machine learning to develop recommendation systems.'
 },{
