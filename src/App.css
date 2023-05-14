@@ -47,22 +47,22 @@
 }
 
 .fade-enter {
-  transform: translateX(100%);
+  transform: translateX(25%);
   opacity: 0;
 }
 
 .fade-enter-active {
   opacity: 1;
   transform: translateX(0%);
-  transition: opacity 700ms ease-in, transform 600ms ease-out;
+  transition: opacity 400ms ease-in, transform 400ms ease-in;
 }
 .fade-exit {
   opacity: 1;
-  transform: translateX(100%);
+  transform: translateX(0%);
 }
 
 .fade-exit-active {
   opacity: 0;
-  transform: translateX(0%);
-  transition: opacity 700ms ease-out, transform 600ms ease-out;
+  transform: translateX(-25%);
+  transition: opacity 400ms ease-out, transform 400ms ease-out;
 }

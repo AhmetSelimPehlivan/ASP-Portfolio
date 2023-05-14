@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ThemeContext, themes } from '../../context/ThemeContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faLaptopCode, faUniversity } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faLaptopCode, faUniversity, faHouseChimney } from '@fortawesome/free-solid-svg-icons';
 import ToggleDark from '../../components/ToggleDark';
 import ScNavbar from './ScNavbar';
 
@@ -11,6 +11,7 @@ const Navbar = () => {
     return (
         <ScNavbar>
             <div className='Mail'>
+                <Link to="/"><FontAwesomeIcon icon={faHouseChimney}/></Link>
                 <a href="ahmetselimpehlivan@gmail.com" className='Gmail'><FontAwesomeIcon icon={faEnvelope}/><p>ahmetselimpehlivan@gmail.com</p></a>
             </div>
             <div className='DarkMode'>
