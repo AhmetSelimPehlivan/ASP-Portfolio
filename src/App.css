@@ -46,11 +46,23 @@
       align-items: center;
 }
 
-.interaction-button img:hover {
-  background: #525f7f;
-  border-radius: 50%;
-  box-shadow: 0 0 5px #525f7f,
-              0 0 10px #525f7f,
-              0 0 15px #525f7f,
-              0 0 30px #525f7f;
+.fade-enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 700ms ease-in, transform 600ms ease-out;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(0%);
+  transition: opacity 700ms ease-out, transform 600ms ease-out;
 }

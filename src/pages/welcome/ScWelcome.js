@@ -16,13 +16,6 @@ const ScWelcome = Styled.div`
                 text-align: center;
                 width: 75%;
                 padding: 80px;
-
-                .socialMedia{
-                    padding: 50px;
-                    a{
-                        padding: 7px;
-                    }
-                }
             }
             .myImage{
                 display: flex;

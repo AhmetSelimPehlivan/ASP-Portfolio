@@ -2,7 +2,7 @@ import Linkedin from '../assets/img/linkedin.svg';
 import Github from '../assets/img/github.svg';
 import Medium from '../assets/img/medium.svg';
 import Instagram from '../assets/img/instagram.svg';
-export const SocialMedia = [{
+export const SocialMediaConst = [{
     name: 'Linkedin',
     imgUrl: <img alt="Linkedin" src={Linkedin}/>,
     link: 'https://www.linkedin.com/in/ahmet-selim-pehlivan-ba147916a/'

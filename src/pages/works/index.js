@@ -1,16 +1,9 @@
-import React from 'react';
+import React, { useState } from "react";
 import ScWorks from './ScWorks';
 import WorkBox from '../../components/WorkBox';
 import { NativeApps, WebApps, Games } from '../../constants/works';
-import { gsap } from "gsap"
 
 const Works = () => {
-    gsap.to('.nativeApp', {
-      left: "-200%",
-      ease: "Strong.easeInOut",
-      duration: 1,
-      progress: 0.5
-    });
     return (
         <ScWorks>
             <div className='workbox-container'>
