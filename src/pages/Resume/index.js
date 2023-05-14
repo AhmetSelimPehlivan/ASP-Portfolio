@@ -74,10 +74,8 @@ const Resume = () => {
                         <ul>
                             {set.map((brand) => 
                                 <li>
-                                 <div>
-                                  <span class="inner"></span>
-                                  <i className={brand}></i>
-                                 </div>
+                                    <span class="inner"></span>
+                                    <i className={brand}></i>
                                 </li>)}
                         </ul>
                     </>

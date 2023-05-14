@@ -4,22 +4,13 @@ const ScResume = Styled.section`
  border-radius: 15px;
  text-align: initial;
  color: #FFFFFF;
- 
-    $dark: #20826c;
-    $light: #fff;
-    $spacing: 40px;
-    $border: 2px;
-
-    $hover-size: $spacing * 2 - $border * 2;
-    $hover-margin: -38px;
-
  div{
     text-align: initial;
  }
  .education{
-    width: 100%;
+    width: 85%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     .school{
         .school-title{
@@ -73,7 +64,9 @@ const ScResume = Styled.section`
     }
  }
  .experiences{
+    width: 85%;
     .jobs{
+        margin-left: 170px;
         position: relative;
         &:before {
             top: 10px;
@@ -88,7 +81,7 @@ const ScResume = Styled.section`
         .job-box{
             position: relative;
             padding-left: 20px;
-            margin-bottom: 45px;
+            margin-bottom: 60px;
             &::before {
                 content: "";
                 top: 9px;
@@ -100,33 +93,31 @@ const ScResume = Styled.section`
                 background-color: #fff;
             }
             .job-date {
-                margin-left: 0;
-                margin-right: 22px;
+                margin-right: 20px;
                 padding: 8px 6px;
-                font-size: 0.875em;
+                font-size: .875em;
                 text-align: center;
                 position: absolute;
-                width: 160px;
+                width: 140px;
                 right: 100%;
-                left: auto;
                 top: -4px;
                 background-color: #d14b4a;
                 &:before {
                   display: none;
                 }
-            
                 &:after {
-                    content: "";
-                    top: 0;
-                    left: 100%;
-                    width: 0;
-                    height: 0;
+                    display: inline-block;
+                    content: '';
                     position: absolute;
-                    background-color: #d14b4a;
-                    border-top: 16px solid transparent!important;
-                    border-bottom: 16px solid transparent!important;
-                    border-right: 10px solid transparent!important;
-                    border-left: 10px solid transparent;
+                    right: -25px;
+                    bottom: 2px;
+                    color: #d14b4a;
+                    
+                    border-top: 16px solid transparent;
+                    border-bottom: 16px solid transparent;
+                    border-right: 13px solid transparent;
+                    border-left: 13px solid;
+                  }
                 }
             }
 
@@ -149,58 +140,46 @@ const ScResume = Styled.section`
     }
  }
  .Skills{
-    width: 100%;
+    width: 85%;
     ul{
         display: flex;
         li {
+            width: 70px;
+            height: 70px;
             float: left;
             font-size: 2em;
-            margin-right: $spacing;
-            line-height: $spacing * 2;
-            position: relative;
-            text-align: center;
-            
-            div {
-              background-color: $light;
-              color: $dark;
-              display: block;
-              height: $spacing * 2;
-              position: relative;
-              text-decoration: none;
-              width: $spacing * 2;
-              
-              @include border-radius(50%);
-              @include transition(color 0.1s);
-          
-              i {
+            margin-right: 10px;
+            background-color: #12161a;
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+            border-radius: 50%;
+            transition: color 0.2s;
+        
+            i {
                 position: relative;
                 z-index: 1;
-              }
+            }
           
-              .inner {
-                background-color: $dark;
+            .inner {
+                width: 0px;
+                height: 0px;
+                background-color: #525f7f;
                 display: block;
-                height: 0;
-                left: 50%;
-                margin: 0;
                 position: absolute;
-                top: 50%;
-                width: 0;
-            
-                @include border-radius(50%);
-                @include transition(all 0.1s);
+                border-radius: 50%;
+                transition: all 0.1s;
               }
           
-              &:hover {
-                color: $light;
-          
-                .inner {
-                  height: $hover-size;
-                  margin-left: $hover-margin;
-                  margin-top: $hover-margin;
-                  width: $hover-size;
+            &:hover {
+                color: #12161a;
+                background-color: #12161a;
+
+                .inner{
+                    height: 65px;
+                    width: 65px;
                 }
-              }
+            }
         }
     }
  }
