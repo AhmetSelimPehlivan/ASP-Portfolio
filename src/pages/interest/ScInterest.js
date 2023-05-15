@@ -1,44 +1,44 @@
 import Styled from "styled-components";
 const ScInterest = Styled.section`
-.interest-box{
+.interest{
     display: flex;
-    .interest-paragraphs{
-        margin: 0px 75px;
+    justify-content: center;
+    align-items: center;
+
+    .interest-paragraph{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .interest-transition-enter {
-            opacity: 0;
+        width: 100%;
+
+        .interest-box{
+          margin: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          .paragraph{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
           }
-          .interest-transition-enter-active {
-            opacity: 1;
-            transition: opacity 200ms;
+          .illusturation{
+            height: 250px;
+            margin: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            img{
+              position: absolute;
+            }
           }
-          .interest-transition-exit {
-            opacity: 1;
-          }
-          .interest-transition-exit-active {
-            opacity: 0;
-            transition: opacity 200ms;
-          }
+        }
     }
-    .interest-illusturation{
-        .my-node-enter {
-            opacity: 0;
-          }
-          .my-node-enter-active {
-            opacity: 1;
-            transition: opacity 200ms;
-          }
-          .my-node-exit {
-            opacity: 1;
-          }
-          .my-node-exit-active {
-            opacity: 0;
-            transition: opacity 200ms;
-          }
-        img{width: 100%;}
+    .illusturation{
+      width: 100%;
     }
 }
 `

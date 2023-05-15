@@ -1,38 +1,35 @@
 import React, { useEffect, useState } from 'react';
 import ScInterest from './ScInterest';
 import { InterestConst } from '../../constants/InterestConst';
-import { InterestAnimation } from '../../constants/animator';
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "gsap/dist/gsap";
-gsap.registerPlugin(ScrollTrigger);
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const Interest = () => {
-    gsap.to('.test', {
-      left: "-200%",
-      ease: "Strong.easeInOut",
-      duration: 1,
-      progress: 0.5
+  useEffect(() =>{
+    AOS.init({
+      duration: 600,
+      easing: "ease",
+      once: false
     });
+    AOS.refresh();
+  });
     return (
         <ScInterest>
-          <div className='interest-box' >
-              <div className='interest-paragraphs'>
+          <div className='interest' >
+              <div className='interest-paragraph'>
                   {
                     InterestConst.map((item, index) =>
-                    <div className='interest'>
-                      <h3>{item.title}</h3>
-                      <p>{item.paragraph}</p>  
+                    <div className='interest-box'>
+                      <div className='paragraph' data-aos="fade-up" data-aos-delay="150" >
+                        <h3>{item.title}</h3>
+                        <p>{item.paragraph}</p>  
+                      </div>
+                      <div className='illusturation' data-aos="fade-up" data-aos-delay="150" >
+                      {item.animation.map((item,index) =><img alt={item.name} style={item.style} src={item.src} data-aos="fade-up" data-aos-delay="150"/>)}
+                      </div>
                     </div>
                     )
                   }
-              </div>
-              <div className='interest-illusturation'>
-                {
-                  InterestAnimation.map((item, index) =>
-                    <div className='test'>{item.img}</div>
-                  )
-                }
               </div>
           </div>
         </ScInterest>

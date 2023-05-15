@@ -13,12 +13,6 @@ export const html = {
     website: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
   };
   
-  export const gsap = {
-    name: 'gsap',
-    url: 'https://cdn.cdnlogo.com/logos/g/31/gsap-greensock.svg',
-    website: 'https://greensock.com/gsap/'
-  };
-  
   export const sass = {
     name: 'sass',
     url:
