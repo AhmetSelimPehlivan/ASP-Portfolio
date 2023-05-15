@@ -1,9 +1,13 @@
 import Styled from "styled-components";
 const ScFooter = Styled.div`
 width: 80%;
+margin-top: 50px;
 .footer {
     padding: 24px 0 24px 250px; }
-    .footer [class*="container-"] {
+    .footer [class*="container-"] {    
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding: 0; }
     .footer .nav {
       display: inline-block;

@@ -13,7 +13,7 @@ const ScInterest = Styled.section`
         width: 100%;
 
         .interest-box{
-          margin: 50px;
+          margin: 25px;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -26,7 +26,7 @@ const ScInterest = Styled.section`
           }
           .illusturation{
             height: 250px;
-            margin: 50px 100px;
+            margin: 50px;
             display: flex;
             justify-content: center;
             align-items: center;

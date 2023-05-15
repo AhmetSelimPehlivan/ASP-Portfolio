@@ -24,8 +24,15 @@ const Interest = () => {
                         <h3>{item.title}</h3>
                         <p>{item.paragraph}</p>  
                       </div>
-                      <div className='illusturation' data-aos="fade-up" data-aos-delay="150" >
-                      {item.animation.map((item,index) =><img alt={item.name} style={item.style} src={item.src} data-aos="fade-up" data-aos-delay="150"/>)}
+                      <div className='illusturation'>
+                        {item.animation.map((item,index) =>
+                        <>
+                          {index === 0 
+                          ?<img alt={item.name} style={item.style} src={item.src} data-aos="zoom-in" data-aos-duration="750"/>
+                          :<img alt={item.name} style={item.style} src={item.src} data-aos="zoom-in-right" data-aos-duration="750"/>
+                          }
+                        </>
+                        )}
                       </div>
                     </div>
                     )
