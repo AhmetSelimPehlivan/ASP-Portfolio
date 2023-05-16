@@ -28,7 +28,7 @@ const Resume = () => {
                         </>
                     )}
                 </div>
-                <div className='divider'/>
+                <divider className='box-divider'/>
                 <div className='language'>
                     <h3>Language</h3>
                     {

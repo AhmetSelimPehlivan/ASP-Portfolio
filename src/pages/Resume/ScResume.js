@@ -24,6 +24,9 @@ const ScResume = Styled.section`
             font-weight: 200;
         }
     }
+    .box-divider{
+        border-left: 1px solid #525f7f;
+    }
     .language{
         .progress-bullets{
             margin-bottom: 2em;

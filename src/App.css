@@ -30,6 +30,13 @@
               0 0 30px #2b4276;
 }
 
+.white-content .Skills ul li {
+  color: #ffffff;
+}
+.white-content .Skills ul li:hover {
+  color: #525f7f;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
