@@ -23,6 +23,7 @@ const ScInterest = Styled.section`
             justify-content: flex-start;
             align-items: center;
             flex-direction: column;
+
           }
           .illusturation{
             height: 250px;

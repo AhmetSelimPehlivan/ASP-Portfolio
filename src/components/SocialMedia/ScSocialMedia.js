@@ -6,12 +6,12 @@ a{
 }
 
 img:hover {
-    background: #525f7f;
+    background: #dddddd;
     border-radius: 50%;
-    box-shadow: 0 0 5px #525f7f,
-                0 0 10px #525f7f,
-                0 0 15px #525f7f,
-                0 0 30px #525f7f;
+    box-shadow: 0 0 5px #dddddd,
+                0 0 10px #dddddd,
+                0 0 15px #dddddd,
+                0 0 30px #dddddd;
   }
 `
 export default ScSocialMedia;

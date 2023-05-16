@@ -37,7 +37,7 @@
 }
 .main-container header, section{
     width: 80%;
-    padding: 20px;
+    margin: 20px;
 }
 .main-container section{ 
       display: flex;

@@ -21,8 +21,10 @@ const welcome = () => {
                 <img alt='MyImage' src={ASP}/>
               </div>
             </header>
+            <divider className='session-divider'/>
             <h1>Works</h1>
             <Works/>
+            <divider className='session-divider'/>
             <h1>Interest</h1>
             <Interest/>
           </div>

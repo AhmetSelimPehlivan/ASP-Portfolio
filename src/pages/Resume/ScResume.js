@@ -1,8 +1,9 @@
 import Styled from "styled-components";
 const ScResume = Styled.section`
- background-color: #525f7f;
+ border: 4px solid #525f7f;
  border-radius: 15px;
  text-align: initial;
+ margin-top: 40px;
  color: #FFFFFF;
  div{
     text-align: initial;
@@ -22,9 +23,6 @@ const ScResume = Styled.section`
             font-style: italic;
             font-weight: 200;
         }
-    }
-    .divider{
-        border-left: 1px solid #12161a;
     }
     .language{
         .progress-bullets{
@@ -149,7 +147,7 @@ const ScResume = Styled.section`
             float: left;
             font-size: 2em;
             margin-right: 10px;
-            background-color: #12161a;
+            background-color: #d14b4a;
             display: flex;
             justify-content: center;
             align-items: center;    
@@ -164,7 +162,7 @@ const ScResume = Styled.section`
             .inner {
                 width: 0px;
                 height: 0px;
-                background-color: #525f7f;
+                background-color: #ffffff;
                 display: block;
                 position: absolute;
                 border-radius: 50%;
@@ -172,8 +170,8 @@ const ScResume = Styled.section`
               }
           
             &:hover {
-                color: #12161a;
-                background-color: #12161a;
+                color: #d14b4a;
+                background-color: #d14b4a;
 
                 .inner{
                     height: 65px;
@@ -183,6 +181,5 @@ const ScResume = Styled.section`
         }
     }
  }
-
 `
 export default ScResume;
