@@ -1,8 +1,9 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import React, { Suspense, useEffect, useContext } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer/Footer';
-import Transitions from "./context/Transitions";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
+
 import './App.css';
 
 const WelcomePage = React.lazy(() => import('./pages/welcome'));
@@ -15,15 +16,21 @@ function App() {
   return (
     <Suspense fallback={<p>Loading...</p>}>
       <Navbar/>
-        <Transitions location={location}>
+      <SwitchTransition className="switch-group">
+        <CSSTransition 
+          key={location.key} 
+          timeout={{ enter: 400, exit: 400 }} 
+          classNames="fade">
           <div className="main-container">
-            <Routes>
-                <Route exact path="/" element={<WelcomePage/>}/>
-                <Route path="/works" element={<WorksPage/>} />
-                <Route path="/resume" element={<ResumePage/>} />
+            <Routes location={location}>
+              <Route exact path="/" element={<WelcomePage/>}/>
+              <Route path="/works" element={<WorksPage/>} />
+              <Route path="/resume" element={<ResumePage/>} />
+              <Route path="*" element={<Navigate to="/" />} />
             </Routes>
           </div>
-          </Transitions>
+        </CSSTransition>
+      </SwitchTransition>
       <Footer/>
     </Suspense>
   );

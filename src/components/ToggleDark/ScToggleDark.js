@@ -139,7 +139,7 @@ const ScToggleDark = Styled.div`
   .wrapper .switch .sky {
     position: absolute;
     left: 18%;
-    top: -42px;
+    top: -38px;
     width: 25px;
     height: 25px;
     transform: scale(0);
@@ -208,8 +208,8 @@ const ScToggleDark = Styled.div`
   }
   .wrapper .switch .sky .cloud .circle-lg {
     width: 15px;
-    height: 15px;
-    top: -75%;
+    height: 13px;
+    top: -80%;
     left: 5%;
   }
   .wrapper .switch .sky .cloud .circle-sm {
@@ -241,7 +241,7 @@ const ScToggleDark = Styled.div`
     transform: translateX(35px);
   }
   .wrapper .switch input:checked ~ .boat {
-    top: -50%;
+    top: -20%;
     opacity: 1;
     z-index: -1;
     animation: boatMovement 3s linear alternate infinite;
