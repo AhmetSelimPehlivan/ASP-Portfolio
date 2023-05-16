@@ -12,6 +12,6 @@ img:hover {
                 0 0 10px #dddddd,
                 0 0 15px #dddddd,
                 0 0 30px #dddddd;
-  }
+}
 `
 export default ScSocialMedia;

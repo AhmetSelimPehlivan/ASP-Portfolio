@@ -7,8 +7,29 @@
   pointer-events: none;
 }
 .white-content {
-  background: #e4e4e4;
+  background: #e8e8ee;
+  color: #212b41;  
 }
+.white-content a{
+  color: #212b41;
+}
+.white-content a p{
+  color: #212b41;
+}
+.white-content .workbox-info p, .workbox-info h4{
+  color: #dddddd;
+}
+.white-content svg path{
+  fill: #525f7f;
+}
+.white-content .interaction-button img:hover{
+  background: #2b4276;
+  box-shadow: 0 0 5px #2b4276,
+              0 0 10px #2b4276,
+              0 0 15px #2b4276,
+              0 0 30px #2b4276;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

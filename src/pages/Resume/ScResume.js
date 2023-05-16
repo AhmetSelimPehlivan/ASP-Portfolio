@@ -4,7 +4,7 @@ const ScResume = Styled.section`
  border-radius: 15px;
  text-align: initial;
  margin-top: 40px;
- color: #FFFFFF;
+ 
  div{
     text-align: initial;
  }

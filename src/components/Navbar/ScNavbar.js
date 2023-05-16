@@ -21,7 +21,6 @@ const ScNavbar = Styled.div`
       }
 
       a{
-        color: #FFF;
         transition: all 0.3s;
         position: relative;
         transition: all 0.3s;
@@ -43,8 +42,6 @@ const ScNavbar = Styled.div`
           border-bottom-width: 1px;
           border-top-style: solid;
           border-bottom-style: solid;
-          border-top-color: rgba(255,255,255,0.5);
-          border-bottom-color: rgba(255,255,255,0.5);
           transform: scale(0.1, 1);
         }
         &:hover {
@@ -78,7 +75,6 @@ const ScNavbar = Styled.div`
             cursor: pointer;
         }
         .Gmail{
-          color: white;
           font-size: 15px;
           text-decoration: blink;
           display: flex;

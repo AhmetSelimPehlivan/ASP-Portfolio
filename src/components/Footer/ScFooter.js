@@ -20,7 +20,6 @@ margin-top: 50px;
       .footer .nav-item:first-child a {
         padding-left: 0; }
     .footer .nav-link {
-      color: #ffffff;
       padding: 0 0.5rem;
       font-size: 0.75rem;
       text-transform: uppercase;
@@ -30,7 +29,7 @@ margin-top: 50px;
     .footer .copyright {
       font-size: 0.75rem;
       line-height: 1.8;
-      color: #ffffff; }
+      }
     .footer:after {
       display: table;
       clear: both;
