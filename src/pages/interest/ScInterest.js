@@ -26,6 +26,7 @@ const ScInterest = Styled.section`
 
           }
           .illusturation{
+            width: 100%;
             height: 250px;
             margin: 50px;
             display: flex;
@@ -43,10 +44,15 @@ const ScInterest = Styled.section`
               margin: 50px;
             }
           }
+          @media screen and (max-width: 768px) {
+            .paragraph h3{
+              margin: 20px;
+            }
+            .illusturation{
+              display: none;
+            }
+          }
         }
-    }
-    .illusturation{
-      width: 100%;
     }
 }
 `

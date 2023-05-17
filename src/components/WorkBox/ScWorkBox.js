@@ -28,5 +28,11 @@ display: inline-block;
       100%{transform:translate(0px, 0px); opacity: 1;}
     }
 }
+@media screen and (max-width: 768px){
+    width: 100%;
+    .workbox{
+        margin: 5px;
+    }
+}
 `
 export default ScWorkBox;

@@ -13,5 +13,9 @@ img:hover {
                 0 0 15px #dddddd,
                 0 0 30px #dddddd;
 }
+@media screen and (max-width: 768px){
+    padding: 25px 3px;
+    a{padding: 4px;}
+}
 `
 export default ScSocialMedia;

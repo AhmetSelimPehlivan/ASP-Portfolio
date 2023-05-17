@@ -17,7 +17,7 @@ const Resume = () => {
                     <h3>Education</h3>
                     {
                         Education.map(({title,schoolname,graduation,gpa}) => 
-                        <>
+                        <div className='school-box'>
                             <h4 class="school-title">{title}</h4>
                             <h5 class="graduation-time">
                                 <i class="fa fa-university"></i> {schoolname} - <span class="graduation-date">{graduation}</span>
@@ -25,7 +25,7 @@ const Resume = () => {
                             <div class="graduation-description">
                                 <p>GPA: {gpa}</p>
                             </div>
-                        </>
+                        </div>
                     )}
                 </div>
                 <divider className='box-divider'/>
@@ -55,11 +55,9 @@ const Resume = () => {
                 <div className="jobs">
                     {Experience.map(({company, companyUrl, companyLogo, time, title, description}) =>
                         <div className="job-box">
-                            <time className="job-date">
-                                <span>Jan <strong className="text-upper">2014</strong> - Mar <strong>2016</strong></span>
-                            </time>
+                            
                             <h3 className='job-title'>{title}</h3>
-                            <a href={companyUrl} className='company'>{companyLogo}<span class="company-name">{company}</span></a>
+                            <a href={companyUrl} className='company'>{companyLogo}<span class="company-name">{company}<p className='job-time'>{time}</p></span></a>
                             <p>{description}</p>
                         </div>
                     )}

@@ -6,7 +6,7 @@ export const Languages = [{
 },{
     language:"English",
     level:"Advance",
-    score: 7,
+    score: 8,
     exam:"TOEFL PBT: 520"
 },{
     language:"German",
