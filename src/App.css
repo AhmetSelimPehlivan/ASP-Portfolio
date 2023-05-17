@@ -94,3 +94,23 @@
   transform: translateX(-25%);
   transition: opacity 400ms ease-out, transform 400ms ease-out;
 }
+
+
+@media screen and (max-width: 1200px) {
+  .main-container header, section{
+    width: 85%;
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .main-container header, section{
+    width: 90%;
+    margin: 10px;
+  }
+  
+}
+
+@media screen and (max-width: 450px) {
+
+}

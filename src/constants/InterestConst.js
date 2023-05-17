@@ -22,6 +22,6 @@ export const InterestConst = [{
 },{
     title: 'VR/AR Game',
     paragraph: 'VR (Virtual Reality) games create a fully immersive, three-dimensional environment that allows players to interact with a virtual world, while AR (Augmented Reality) games layer digital elements onto the real world through the use of a camera or smart glasses. I am developing a mobile AR goalkeeper game. Also, I developed a Metaschool VR game project.',
-    animation: [{ name: 'vr1', src: vr1, style: {bottom: "0px"}}, { name: 'vr2', src: vr2, style: {width: "40%", bottom: "-80px"}}]
+    animation: [{ name: 'vr1', src: vr1, style: {bottom: "0px"}}, { name: 'vr2', src: vr2, style: {width: "40%", bottom: "-50px"}}]
 }
 ];

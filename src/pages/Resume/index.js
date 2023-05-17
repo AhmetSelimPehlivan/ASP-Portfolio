@@ -35,7 +35,7 @@ const Resume = () => {
                         Languages.map(({language,level,score,exam}) => 
                         <>
                             <div class="progress-bullets" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">
-                            <strong class="progress-title">{language}</strong>
+                            <h4 class="progress-title">{language}</h4>
                             <span class="progress-bar">
                                 {Array.from({ length: 10 }, (_, index) => (
                                     index < score
@@ -66,7 +66,7 @@ const Resume = () => {
                 </div>
             </div>
             <div className='Skills'>
-                <h3>My Technology Set</h3>
+                <h3 className='skills-header'>My Technology Set</h3>
                 {
                     Skills.map(({title,set}) => 
                     <>

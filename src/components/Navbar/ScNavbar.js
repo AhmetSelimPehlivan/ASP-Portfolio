@@ -97,5 +97,24 @@ const ScNavbar = Styled.div`
         padding-right: 5px;
       }
     }
+
+
+    @media screen and (max-width: 1200px) {
+      .Works a{
+        font-size: 0.8rem;
+        margin: 5px 10px;
+      } 
+      p{
+        font-size: 0.8rem;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      height: 70px;
+      padding-top: 30px;
+    }
+    
+    @media screen and (max-width: 450px) {
+    
+    }
 `;
 export default ScNavbar;

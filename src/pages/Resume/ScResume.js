@@ -4,20 +4,32 @@ const ScResume = Styled.section`
  border-radius: 15px;
  text-align: initial;
  margin-top: 40px;
- 
+
+ @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-top: 15px;
+}
  div{
     text-align: initial;
  }
  .education{
     width: 85%;
     display: flex;
+    margin: 20px 0px;
     justify-content: space-between;
+    @media screen and (max-width: 767px) {
+        width: 92%;
+    }
 
     .school{
         .school-title{
             border-bottom: 1px solid #ccc;
             padding-bottom: 5px;
-            margin-top: 12px;
+            margin-top: 1rem;
+            margin-bottom: 0.3rem;
+
+            @media screen and (min-width: 768px) and (max-width: 1200px) {
+                margin-right: 15px;
+            }
         }
         .graduation-date{
             font-style: italic;
@@ -26,19 +38,17 @@ const ScResume = Styled.section`
     }
     .box-divider{
         border-left: 1px solid #525f7f;
+        margin: 0px 0.7rem;
     }
     .language{
         .progress-bullets{
             margin-bottom: 2em;
             
             .progress-title {
-                font-size: 1.2em;
-                line-height: 1.2em;
                 display: block;
-                margin-bottom: 0.5em;
+                margin-top: 1rem;
             }
             .progress-bar{
-                
                 .bullet{
                     width: 1em;
                     height: 1em;
@@ -54,19 +64,43 @@ const ScResume = Styled.section`
                     background-color: #d14b4a;
                 }
             }
-            .progress-level{
-                margin-left: 5px;
-            }
             .progress-exam p{
                 font-style: italic;
                 margin-top: 3px;
             }
+
+            @media screen and (max-width: 767px) {
+                .progress-bar{
+                    .bullet{
+                        width: 0.5em;
+                        height: 0.5em;
+                        border-radius: 50%;
+                        border-width: 1px;
+                        border-style: solid;
+                        border-color: #d14b4a;
+                        margin-right: 0.31em;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    .fill{
+                        background-color: #d14b4a;
+                    }
+                }
+                .progress-exam p{
+                    font-style: italic;
+                    margin-top: 3px;
+                }
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            margin-left: 10px;
         }
     }
  }
  .experiences{
     width: 85%;
     .jobs{
+        margin: 50px 0px;
         margin-left: 170px;
         position: relative;
         &:before {
@@ -120,12 +154,16 @@ const ScResume = Styled.section`
                     border-left: 13px solid;
                   }
                 }
+
+                @media screen and (min-width: 768px) and (max-width: 1200px){
+
+                }
             }
 
             .company{
                 display: flex;
                 align-items: center;
-                margin-bottom: 6px;
+                margin: 0.7rem 0rem;
                 .company-name{
                     font-size: 16px;
                 }
@@ -142,14 +180,20 @@ const ScResume = Styled.section`
  }
  .Skills{
     width: 85%;
+    .skills-header{
+        margin-bottom: 25px;
+    }
     ul{
         display: flex;
+        flex-wrap: wrap;
+        margin: 1rem 0rem;
+
         li {
-            width: 70px;
-            height: 70px;
+            width: 65px;
+            height: 65px;
             float: left;
             font-size: 2em;
-            margin-right: 10px;
+            margin: 5px;
             background-color: #d14b4a;
             display: flex;
             justify-content: center;
@@ -177,8 +221,35 @@ const ScResume = Styled.section`
                 background-color: #d14b4a;
 
                 .inner{
-                    height: 65px;
-                    width: 65px;
+                    height: 60px;
+                    width: 60px;
+                }
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1200px){
+                width: 52px;
+                height: 52px;
+                font-size: 1.2em;
+                margin: 3px;
+
+                &:hover {
+                    .inner{
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+            }
+            @media screen and (max-width: 768px){
+                width: 32px;
+                height: 32px;
+                font-size: 0.8em;
+                margin: 3px;
+
+                &:hover {
+                    .inner{
+                        height: 30px;
+                        width: 30px;
+                    }
                 }
             }
         }

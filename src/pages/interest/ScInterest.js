@@ -36,6 +36,13 @@ const ScInterest = Styled.section`
               position: absolute;
             }
           }
+          @media screen and (min-width: 768px) and (max-width: 1200px) {
+            margin: 5px;
+            .illusturation{
+              height: 110px;
+              margin: 50px;
+            }
+          }
         }
     }
     .illusturation{

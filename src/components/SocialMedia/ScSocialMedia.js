@@ -1,6 +1,6 @@
 import Styled from "styled-components";
 const ScSocialMedia = Styled.div`
-padding: 50px;
+padding: 50px 5px;
 a{
     padding: 8px;
 }

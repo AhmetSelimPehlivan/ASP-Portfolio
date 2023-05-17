@@ -7,21 +7,34 @@ const ScWelcome = Styled.div`
     align-items: center;
     
     .me{
-        padding: 20px;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        
+        height: calc(100vh - 130px);
+
         .introduction{
+            width: 75%
+            display: flex;
             text-align: center;
-            width: 75%;
-            padding: 60px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         .myImage{
             display: flex;
             align-items: center;
             justify-content: center;
-            img{width: 480px;}
+            max-width: 480px;
+            img{
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            margin-top: 15px;
+            height: calc(100vh - 100px);
+            .myImage{
+                max-width: 325px;
+            }
         }
     }
     .session-divider{
