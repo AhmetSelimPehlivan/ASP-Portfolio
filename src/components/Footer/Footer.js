@@ -6,7 +6,6 @@ function Footer() {
   return (
     <ScFooter>
       <footer className="footer">
-        <Container fluid>
           <Nav>
             <NavItem>
               <NavLink href="https://www.instagram.com/aspehli1/">
@@ -14,13 +13,13 @@ function Footer() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="">
-                About Us
+              <NavLink href="/works">
+                Works
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="">
-                Blog
+              <NavLink href="/resume">
+                Resume
               </NavLink>
             </NavItem>
           </Nav>
@@ -33,7 +32,6 @@ function Footer() {
               ASP
             </a>
           </div>
-        </Container>
       </footer>
     </ScFooter>
   );
