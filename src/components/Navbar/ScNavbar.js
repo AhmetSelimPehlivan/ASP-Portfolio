@@ -94,37 +94,46 @@ const ScNavbar = Styled.div`
 }
 
 @media screen and (max-width: 768px) {
-  
-  padding-top: 10px;
+  padding-top: 0px;
   .navbar-list{
-    top: 50px;
-    left: 0px;
-    position: absolute;
-    flex-direction: column;
-    align-items: flex-start;
-
     .Works, .HomePage{
-      display: ${({ isClicked }) => (isClicked ? 'flex' : 'none')};
-      flex-direction: column;
-      align-items: flex-start;
-      a{
-        margin: 5px 25px;
-      }
-      .Gmail p{ display: none; }
-    }
-    .DarkMode{
-      top: 10px;
-      align-self: center;
+      display: none;
     }
     
     .nav-icon {
       display: block;
-      position: absolute;
-      top: -40px;
+      position: fixed;
       right: 0;
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
+    }
+  }
+  .hamburger-list{
+    display: flex;
+    width: ${({isClicked}) => (isClicked ? "40%" : "0%")};
+    height: ${({isClicked}) => (isClicked ? "100%" : "0vh")};
+    background: ${({isClicked}) => (isClicked ? "#000000" : "")};
+    transform: ${({isClicked}) => (isClicked ? "translateX(0%)" : "translateX(-25%)")};
+    opacity: ${({isClicked}) => (isClicked ? "1" : "0")};
+    top: 0px;
+    transition: opacity 400ms ease-out, transform 400ms ease-out;
+    position: fixed;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .HomePage{margin-top: 30px;}
+    a{
+      display: flex;
+      align-items: center;
+      margin: 10px;
+      font-size: 15px;
+      svg{
+        width: 25px;
+        margin: 8px;
+        font-size: 20px;
+      }
     }
   }
 }
