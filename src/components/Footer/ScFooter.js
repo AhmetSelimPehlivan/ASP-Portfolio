@@ -9,7 +9,7 @@ justify-content: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 25px 0px;
+  margin: 40px 0px;
 
   a{
     margin: 5px;

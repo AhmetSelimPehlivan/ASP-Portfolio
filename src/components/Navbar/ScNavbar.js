@@ -75,7 +75,9 @@ const ScNavbar = Styled.div`
     display: none;
   }
 }
-
+.hamburger-list{
+  display: none;
+}
 @media screen and (max-width: 1200px) {
   .navbar-list{
     height: 70px;
@@ -101,34 +103,39 @@ const ScNavbar = Styled.div`
     }
     
     .nav-icon {
-      display: block;
-      position: fixed;
       right: 0;
+      top: 23px;
+      display: block;
+      position: absolute;
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
     }
   }
   .hamburger-list{
-    display: flex;
-    width: ${({isClicked}) => (isClicked ? "40%" : "0%")};
-    height: ${({isClicked}) => (isClicked ? "100%" : "0vh")};
-    background: ${({isClicked}) => (isClicked ? "#000000" : "")};
-    transform: ${({isClicked}) => (isClicked ? "translateX(0%)" : "translateX(-25%)")};
-    opacity: ${({isClicked}) => (isClicked ? "1" : "0")};
     top: 0px;
-    transition: opacity 400ms ease-out, transform 400ms ease-out;
+    width: 35%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    opacity: ${({isClicked}) => (isClicked ? "1" : "0")};
+    left: ${({isClicked}) => (isClicked ? "0%" : "-35%")};
+    transition: left 0.8s, opacity 0.8s;
+    background: #004e16;
     position: fixed;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 
     .HomePage{margin-top: 30px;}
+    
+    p{color: white;}
     a{
       display: flex;
       align-items: center;
       margin: 10px;
       font-size: 15px;
+      color: white !important;
       svg{
         width: 25px;
         margin: 8px;

@@ -28,8 +28,8 @@ const Interest = () => {
                         {item.animation.map((item,index) =>
                         <>
                           {index === 0 
-                          ?<img alt={item.name} style={item.style} src={item.src} data-aos="zoom-in" data-aos-duration="750"/>
-                          :<img alt={item.name} style={item.style} src={item.src} data-aos="zoom-in-right" data-aos-duration="750"/>
+                          ?<img alt={item.name} style={item.style} src={item.src} data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="750"/>
+                          :<img alt={item.name} style={item.style} src={item.src} data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom" data-aos-duration="750"/>
                           }
                         </>
                         )}
