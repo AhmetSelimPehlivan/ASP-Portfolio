@@ -32,6 +32,7 @@ const ToggleDark = (props) => {
               <div class="outer"></div>
               <div class="inner"></div>
             </div>
+            <div class="crescent-moon"></div>
             <div class="cloud cloud1">
               <div class="rect"></div>
               <div class="circle circle-lg"></div>

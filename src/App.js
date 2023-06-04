@@ -1,14 +1,13 @@
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
-import React, { Suspense, useEffect, useContext } from 'react';
+import React, { Suspense} from 'react';
+import WelcomePage from './pages/welcome';
+import WorksPage from './pages/works';
+import ResumePage from './pages/Resume';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer/Footer';
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 import './App.css';
-
-const WelcomePage = React.lazy(() => import('./pages/welcome'));
-const WorksPage = React.lazy(() => import('./pages/works'));
-const ResumePage = React.lazy(() => import('./pages/Resume'));
 
 function App() {
   const location = useLocation();

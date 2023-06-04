@@ -4,6 +4,8 @@ const ScWorks = Styled.section`
       display: flex;
       flex-wrap: wrap;
       text-align: center;
+      flex-direction: column;
+      align-items: flex-start;
 
       .webApps, .nativeApp, .games{
           display: flex;

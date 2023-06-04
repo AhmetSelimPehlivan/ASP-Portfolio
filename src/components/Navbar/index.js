@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ThemeContext, themes } from '../../context/ThemeContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,10 +10,6 @@ const Navbar = () => {
     const [darkMode, setDarkMode] = useState(true);  
     const [click, setClick] = useState(false);
     
-    const handleClick = () => {
-        console.log("handleClick");
-        setClick(false);
-      };
     return (
         <ScNavbar isClicked={click}>
             <ul className='navbar-list'>

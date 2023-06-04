@@ -29,7 +29,7 @@ justify-content: center;
   
 @media screen and (max-width: 768px) {
   .footer {
-    margin: 25px 0px;
+    margin: 75px 0px;
     a{
       margin: 0px;
       font-size: 14px;

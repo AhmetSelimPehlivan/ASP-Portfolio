@@ -1,50 +1,34 @@
 export const WebApps = [
   {
-    name: 'mazino makeovers',
-    videoLink:
-      'https://res.cloudinary.com/dwa1jtluu/video/upload/v1640766642/kenjimmy.me/Mazino_Makeovers____Book_a_makeover_appointment_with_the_best_beauty_saloon_in_Lagos_-_Google_Chrome_2021-10-22_22-26-47compress_nqdqgc.mp4',
-    link: 'https://mazinomakeovers.netlify.app',
-    techUsed: 'Nuxt Tailwind Node.js Moment.js',
+    name: 'Meta VR',
+    githubLink:
+      '-',
+    techUsed: 'Reactjs Node.js Firebase style-component',
     imgUrl:
-      'https://res.cloudinary.com/dwa1jtluu/image/upload/q_auto,f_auto/v1663252544/kenjimmy.me/444_a17rec.jpg'
+      'https://res.cloudinary.com/dclgww1gl/image/upload/v1685890808/vr_meta_qq1ndx.png'
   },
   {
-    videoLink:
-      'https://res.cloudinary.com/dwa1jtluu/video/upload/v1640766644/kenjimmy.me/DARKMODE.mp4_bj94zf.mp4',
+    name: 'ahmetselimpehlivan.com',
+    githubLink:
+      'https://github.com/AhmetSelimPehlivan/ASP-Portfolio',
+    techUsed: 'Reactjs Node.js Firebase style-component',
     imgUrl:
-      'https://res.cloudinary.com/dwa1jtluu/image/upload/q_auto,f_auto/v1663252535/kenjimmy.me/112_xoqgia.jpg'
+      'https://res.cloudinary.com/dclgww1gl/image/upload/v1685888028/asp_gyyk5t.png',
   },
   {
-    name: 'Spasora',
-    videoLink:
-      'https://res.cloudinary.com/dwa1jtluu/video/upload/v1640766649/kenjimmy.me/Spasora___Marketplace_to_discover_and_book_physical_spaces_-_Google_Chrome_2021-10-22_19-48-03.compressed.mp4_gho0ql.mp4',
-    link: 'https://spasora.netlify.app/',
-    techUsed: 'Nuxt.js TailwindCSS Node.js Express MongoDB',
+    name: 'e-commerce',
+    githubLink:
+      '',
+    techUsed: 'Reactjs Next.js Node.js Mongodb style-component',
     imgUrl:
-      'https://res.cloudinary.com/dwa1jtluu/image/upload/q_auto,f_auto/v1663252550/kenjimmy.me/333_kq5r5b.jpg'
+      'https://res.cloudinary.com/dclgww1gl/image/upload/v1685890428/ecommerce_xkmhk1.png'
   },
   {
-    name: 'Bossbus',
-    videoLink:
-      'https://res.cloudinary.com/dwa1jtluu/video/upload/v1642430641/kenjimmy.me/bossbus___ride_charter_-_google_chrome_2022-01-17_15-35-19.mp4_360p_ixizhq.mp4',
-    link: 'https://bossbusworld.com/',
-    techUsed: '**classified',
+    name: 'Trueyogi Annotation',
+    link: '-',
+    techUsed: 'Reactjs Node.js Mongodb Redis AWS DynamoDb Style-component',
     imgUrl:
-      'https://res.cloudinary.com/dwa1jtluu/image/upload/q_auto,f_auto/v1663252537/kenjimmy.me/222_c7tsjz.jpg'
-  },
-  {
-    name: 'Flexicreate',
-    link: 'https://flexicreate.com/',
-    techUsed: 'Vanila HTML, CSS, and JavaScript',
-    imgUrl:
-      'https://res.cloudinary.com/dwa1jtluu/image/upload/q_auto,f_auto/v1663252564/kenjimmy.me/555_ahwodb.jpg'
-  },
-  {
-    name: 'Veet',
-    link: 'https://joinveet.com/',
-    techUsed: 'Nest.js MongoDB Redis Docker AWS',
-    imgUrl:
-      'https://res.cloudinary.com/dwa1jtluu/image/upload/v1673204918/kenjimmy.me/veet-shot_lerl5h.jpg'
+      'https://res.cloudinary.com/dclgww1gl/image/upload/v1685888028/annotation_rh56jy.png'
   }
 
 ];
@@ -53,20 +37,17 @@ export const NativeApps = [
   {
     name: 'YKS\'Ye Koç',
     imgUrl:
-    'https://res.cloudinary.com/dwa1jtluu/image/upload/v1673204918/kenjimmy.me/veet-shot_lerl5h.jpg',
-    //bgImage: require('~/assets/images/My-works/ipa-mastery.jpg'),
+    'https://res.cloudinary.com/dclgww1gl/image/upload/v1685890598/yks_fhdwyc.jpg',
     link:
       'https://play.google.com/store/apps/details?id=com.ykskoc',
-    techUsed: 'Android Studio, Java, MySql'
+    techUsed: 'Android Studio, Java, MySql, firebase'
   },
 ];
 // AR/VR Games
 export const Games = [
   {
     name: 'AR Goalkeeper',
-    imgUrl:
-    'https://res.cloudinary.com/dwa1jtluu/image/upload/v1673204918/kenjimmy.me/veet-shot_lerl5h.jpg',
-    //bgImage: require('~/assets/images/My-works/ipa-mastery.jpg'),
+    imgUrl: 'https://res.cloudinary.com/dclgww1gl/image/upload/v1685888029/goalkeeper_alvds8.webp',
     link:'https://play.google.com/store/apps/details?id=com.HyperactiveGames.GoalKeeper&pli=1',
     techUsed: 'Unity, C#, Mediapipe, Firebase'
   },

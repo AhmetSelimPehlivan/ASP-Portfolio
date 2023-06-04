@@ -5,6 +5,13 @@ export const Experience = [{
     company:"Trueyogi",
     companyUrl: "https://trueyogi.com/",
     companyLogo: <img src={Trueyogi}></img>,
+    time:"June 2023 - Present",
+    title: "Machine Learning Engineer and Software Developer",
+    description:"Trueyogi Wellness App and Face Yoga"
+},{
+    company:"Trueyogi",
+    companyUrl: "https://trueyogi.com/",
+    companyLogo: <img src={Trueyogi}></img>,
     time:"September 2022 - Fabruary 2023",
     title: "Machine Learning Engineer - Part Time/Intern",
     description:"Annotation tool design, fine-tune MoveNet model using LSTM"

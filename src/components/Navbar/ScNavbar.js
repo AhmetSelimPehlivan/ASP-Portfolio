@@ -114,7 +114,7 @@ const ScNavbar = Styled.div`
   }
   .hamburger-list{
     top: 0px;
-    width: 35%;
+    width: 40%;
     height: 100%;
     z-index: 100;
     display: flex;
