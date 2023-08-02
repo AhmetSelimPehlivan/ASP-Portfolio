@@ -1,34 +1,33 @@
 export const WebApps = [
   {
-    name: 'Meta VR',
-    githubLink:
-      '-',
-    techUsed: 'Reactjs Node.js Firebase style-component',
-    imgUrl:
-      'https://res.cloudinary.com/dclgww1gl/image/upload/v1685890808/vr_meta_qq1ndx.png'
+    name: 'Face Skin Analysis',
+    githubLink: 'https://github.com/AhmetSelimPehlivan/face-anomoly-detection',
+    techUsed: 'Python Flask YoloV3 PyTorch Reactjs Node.js Firebase style-component',
+    link: 'https://face-defect-detection.web.app/',
+    imgUrl: 'https://res.cloudinary.com/dclgww1gl/image/upload/v1690189841/ejbgwoz6dhhlnt3bi2tr.png',
   },
   {
     name: 'ahmetselimpehlivan.com',
-    githubLink:
-      'https://github.com/AhmetSelimPehlivan/ASP-Portfolio',
+    githubLink: 'https://github.com/AhmetSelimPehlivan/ASP-Portfolio',
     techUsed: 'Reactjs Node.js Firebase style-component',
+    link: 'https://github.com/AhmetSelimPehlivan/ASP-Portfolio',
     imgUrl:
       'https://res.cloudinary.com/dclgww1gl/image/upload/v1685888028/asp_gyyk5t.png',
   },
   {
-    name: 'e-commerce',
-    githubLink:
-      '',
-    techUsed: 'Reactjs Next.js Node.js Mongodb style-component',
+    name: 'Meta VR',
+    githubLink: 'https://github.com/AhmetSelimPehlivan/metaschool_web',
+    techUsed: 'Reactjs Node.js Firebase style-component',
+    link: 'https://github.com/AhmetSelimPehlivan/metaschool_web',
     imgUrl:
-      'https://res.cloudinary.com/dclgww1gl/image/upload/v1685890428/ecommerce_xkmhk1.png'
+      'https://res.cloudinary.com/dclgww1gl/image/upload/v1685890808/vr_meta_qq1ndx.png'
   },
   {
     name: 'Trueyogi Annotation',
-    link: '-',
+    githubLink: 'https://github.com/AhmetSelimPehlivan/annotation-tool',
     techUsed: 'Reactjs Node.js Mongodb Redis AWS DynamoDb Style-component',
-    imgUrl:
-      'https://res.cloudinary.com/dclgww1gl/image/upload/v1685888028/annotation_rh56jy.png'
+    link: 'https://github.com/AhmetSelimPehlivan/annotation-tool',
+    imgUrl: 'https://res.cloudinary.com/dclgww1gl/image/upload/v1685888028/annotation_rh56jy.png'
   }
 
 ];
