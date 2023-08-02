@@ -1,34 +1,14 @@
 # ASP Portfolio
 <h1 align="center">
-    <a href="https://amplication.com/#gh-light-mode-only">
-    <img src="./.github/assets/amplication-logo-light-mode.svg">
-    </a>
+    <img src="./public/fav.png" alt="Image" style="width: 128px; height: auto;">
 </h1>
 
-<p align="center">
-  <i align="center">Instantly generate production-ready Node.js backend apps 🚀</i>
-</p>
-
-<h4 align="center">
-  <a href="https://github.com/amplication/amplication/actions/workflows/ci.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/amplication/amplication/ci.yml?branch=master&label=pipeline&style=flat-square" alt="continuous integration">
-  </a>
-  <a href="https://opensource.org/licenses/Apache-2.0">
-    <img src="https://img.shields.io/badge/apache%202.0-blue.svg?style=flat-square&label=license" alt="license">
-  </a>
-  <br>
-  <a href="https://www.linkedin.com/in/ahmetselimpehlivan/">
-    <img src="https://img.shields.io/badge/discord-7289da.svg?style=flat-square" alt="linkedin">
-  </a>
-</h4>
+### Live "https://ahmetselimpehlivan.com/"
 
 ## Introduction
-
 ASP Portfolio is an open-source React.js portfolio page, designed and developed by Ahmet Selim Pehlivan. It serves as an example of a modern and dynamic portfolio, showcasing projects and skills in an elegant manner.
-### Live - https://ahmetselimpehlivan.com/
 
 ### Features
-
 - Dark Mode
 - Resume Page
 - Minimal Design
@@ -51,7 +31,6 @@ ASP Portfolio is an open-source React.js portfolio page, designed and developed 
 If you are looking to create your own portfolio page, ASP Portfolio provides an excellent starting point. You can use this codebase as a foundation and customize it to fit your unique style and preferences. Follow the steps below to get started:
 
 ## Development
-
 <details>
 <summary>
 Scripts
