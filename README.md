@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+# ASP Portfolio
+<h1 align="center">
+    <a href="https://amplication.com/#gh-light-mode-only">
+    <img src="./.github/assets/amplication-logo-light-mode.svg">
+    </a>
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <i align="center">Instantly generate production-ready Node.js backend apps 🚀</i>
+</p>
 
-## Available Scripts
+<h4 align="center">
+  <a href="https://github.com/amplication/amplication/actions/workflows/ci.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/amplication/amplication/ci.yml?branch=master&label=pipeline&style=flat-square" alt="continuous integration">
+  </a>
+  <a href="https://opensource.org/licenses/Apache-2.0">
+    <img src="https://img.shields.io/badge/apache%202.0-blue.svg?style=flat-square&label=license" alt="license">
+  </a>
+  <br>
+  <a href="https://www.linkedin.com/in/ahmetselimpehlivan/">
+    <img src="https://img.shields.io/badge/discord-7289da.svg?style=flat-square" alt="linkedin">
+  </a>
+</h4>
 
-In the project directory, you can run:
+## Introduction
 
-### `npm start`
+ASP Portfolio is an open-source React.js portfolio page, designed and developed by Ahmet Selim Pehlivan. It serves as an example of a modern and dynamic portfolio, showcasing projects and skills in an elegant manner.
+### Live - https://ahmetselimpehlivan.com/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Dark Mode
+- Resume Page
+- Minimal Design
+- Easy To Browse
+- Page Animations
+- CSS Transition
+- Cloudinary Web Cloud
+- Clean and responsive design
+- Modern CSS (Style Component)
+- React.js powered for a seamless user experience
 
-### `npm test`
+### Sections
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Homepage
+- Works
+- Resume
+- Contact
+  
+###  Usage
+If you are looking to create your own portfolio page, ASP Portfolio provides an excellent starting point. You can use this codebase as a foundation and customize it to fit your unique style and preferences. Follow the steps below to get started:
 
-### `npm run build`
+## Development
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<details>
+<summary>
+Scripts
+</summary> <br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> **Note**
+> : it is also possible to start development with GitHub Codespaces, when navigating to `< > Code`, select `Codespaces` instead of `Local`. Click on either the `+`-sign or the `Create codespace on master`-button.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+###
 
-### `npm run eject`
+1. Clone the repository and install dependencies:
+```shell
+https://github.com/AhmetSelimPehlivan/ASP-Portfolio.git && npm install
+```
+2. Customize the content in the portfolio components to reflect your projects, experiences, and skills.
+3. Customize the styling to match your personal branding.
+4. Launch the portfolio.
+```shell
+ npm start
+```
+5. Deploy the portfolio to your desired hosting service. Like Firebase or Heroku.
+</details>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### How To Deploy - 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project has been deployed using Firebase.
+<details>
+<summary>
+Firebase Deployment
+</summary> <br />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  ###
+  - First things first, in order to use Firebase, you need to log in to your Firebase console and create a new project
+  - You then need to install the Firebase CLI tools:
+  ```shell
+   npm install -g firebase-tools
+  ```
+  - Next, we will setup a firebase context for the current application. For that, in the same root folder, type:
+  ```shell
+   firebase init
+  ```
+  - One final step before deploying your application: you just need to make sure that you are logged in to your Firebase account:
+  ```shell
+   firebase login
+  ```
+  - Finally, it is time to deploy our application to millions of users:
+  ```shell
+   firebase deploy
+  ```
+  - Great job! You can now visit the generated URL and experience your live application. If you prefer to use a custom URL, you have the option to modify it using Firebase hosting.
+</details>
+  
+### How To Contribute - 
+I would be delighted to review your pull requests (PRs) and explore all the fantastic enhancements you can make to this portfolio.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Tech Stack Used - 
+- React.js
+- Style-Component
+- CSSTransition
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Thanks
+If you found this portfolio template enjoyable, please consider giving it a ⭐.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### License
+ASP Portfolio is open-source software released under the MIT License.
